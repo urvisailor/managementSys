@@ -89,31 +89,55 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: 'bold',
         marginBottom: 4,
-        color:color.BLACK
+        color: color.BLACK
     },
     email: {
         fontSize: 14,
         marginBottom: 4,
-        color:color.BLACK
+        color: color.BLACK
     },
     gender: {
         fontSize: 14,
         marginBottom: 4,
-        color:color.BLACK
+        color: color.BLACK
     },
     status: {
         fontSize: 14,
         marginBottom: 4,
-        color:color.BLACK
+        color: color.BLACK
     },
     addButton: {
         marginTop: 16,
         alignSelf: 'center',
-      },
-      buttonText: {
+    },
+    buttonText: {
         marginLeft: 8,
         color: color.WHITE,
         fontWeight: 'bold',
+    },
+    editButton: {
+        marginTop: 8,
+        alignSelf: 'flex-end',
+    },
+    editImg: {
+        width: 30,
+        height: 30
+    },
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginBottom: 20,
+        color:color.BLACK
+    },
+    description: {
+        fontSize: 16,
+        textAlign: 'center',
+        color:color.BLACK
+    },
+    contactInfo: {
+        fontSize: 16,
+        color:color.BLACK,
+        textAlign:'center'
       },
 })
 export default styles

@@ -17,6 +17,11 @@ const styles = StyleSheet.create({
         color:color.BLACK,
         textAlign:'center',
         fontWeight:'bold'
+    },
+    loader:{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
     }
 })
 export default styles
