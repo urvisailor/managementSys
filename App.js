@@ -7,14 +7,13 @@
 
 import React from 'react';
 import { Text, View } from 'react-native';
+import Login from './app/screens/login';
 
 
 function App() {
 
   return (
-    <View>
-      <Text>Hello</Text>
-    </View>
+    <Login/>
   );
 }
 
