@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         marginTop: 30,
         fontSize: 30,
         fontWeight: '500',
-        color:color.BLACK
+        color: color.BLACK
     },
     header: {
         backgroundColor: color.SILVER,
@@ -63,13 +63,57 @@ const styles = StyleSheet.create({
     userName: {
         textAlign: 'center',
         marginTop: 10,
-        color:color.BLACK
+        color: color.BLACK
     },
     shiftBtn: {
         marginTop: 10
     },
     safeArea: {
         backgroundColor: color.SILVER
-    }
+    },
+    card: {
+        backgroundColor: '#ffffff',
+        borderRadius: 8,
+        padding: 16,
+        marginBottom: 16,
+        elevation: 4,
+    },
+    image: {
+        width: 100,
+        height: 100,
+        borderRadius: 50,
+        alignSelf: 'center',
+        marginBottom: 8,
+    },
+    name: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        marginBottom: 4,
+        color:color.BLACK
+    },
+    email: {
+        fontSize: 14,
+        marginBottom: 4,
+        color:color.BLACK
+    },
+    gender: {
+        fontSize: 14,
+        marginBottom: 4,
+        color:color.BLACK
+    },
+    status: {
+        fontSize: 14,
+        marginBottom: 4,
+        color:color.BLACK
+    },
+    addButton: {
+        marginTop: 16,
+        alignSelf: 'center',
+      },
+      buttonText: {
+        marginLeft: 8,
+        color: color.WHITE,
+        fontWeight: 'bold',
+      },
 })
 export default styles

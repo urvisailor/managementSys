@@ -11,28 +11,30 @@ const Login = (props) => {
     } = props
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
-  
+
     useEffect(() => {
         const loginData = async () => {
             const data = await AsyncStorage.getItem('logindata')
             if (data) {
-              //navigation
+                //navigation
+                navigation.navigate('aboutUs')
             }
         }
         loginData();
     }, [])
 
-    const onLogin = async() => {
+    const onLogin = async () => {
         if (email && password) {
-            if(email==='abc@gmail.com' && password==='abc'){
-                await AsyncStorage.setItem('logindata', JSON.stringify({email:email,password:password}))
-              //navigation
-            }else{
+            if (email === 'abc@gmail.com' && password === 'abc') {
+                await AsyncStorage.setItem('logindata', JSON.stringify({ email: email, password: password }))
+                //navigation
+                navigation.navigate('aboutUs')
+            } else {
                 Alert.alert('', "Please enter valid email and password", [{
                     text: "Ok",
                 }, {
                     text: "Cancel",
-                }]) 
+                }])
             }
         } else {
             Alert.alert('', "Please enter email and password", [{

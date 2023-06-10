@@ -6,14 +6,20 @@
  */
 
 import React from 'react';
-import { Text, View } from 'react-native';
-import Login from './app/screens/login';
+import { NavigationContainer } from '@react-navigation/native';
+import Navigation from './app/navigation';
+import { Provider } from 'react-redux';
+import store from './app/redux/store';
 
 
 function App() {
 
   return (
-    <Login/>
+    <Provider store={store} >
+      <NavigationContainer>
+        <Navigation />
+      </NavigationContainer>
+    </Provider>
   );
 }
 
