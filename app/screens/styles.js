@@ -127,17 +127,53 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 20,
-        color:color.BLACK
+        color: color.BLACK
     },
     description: {
         fontSize: 16,
         textAlign: 'center',
-        color:color.BLACK
+        color: color.BLACK
     },
     contactInfo: {
         fontSize: 16,
-        color:color.BLACK,
-        textAlign:'center'
-      },
+        color: color.BLACK,
+        textAlign: 'center'
+    },
+    camera: {
+        flex: 1,
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+    },
+    previewContainer: {
+        flex: 1,
+        position: 'absolute',
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    previewSvg: {
+        width: '100%',
+        height: '100%',
+    },
+    emoji: {
+        position: 'absolute',
+        fontSize: 40,
+        color: '#FF0000',
+    },
+    captureButton: {
+        alignSelf: 'center',
+        backgroundColor: '#ffffff',
+        borderRadius: 40,
+        paddingVertical: 16,
+        paddingHorizontal: 32,
+        marginBottom: 32,
+    },
+    cameraContainer: {
+        flexDirection: 'column',
+        backgroundColor: color.BLACK,
+    }
 })
 export default styles
